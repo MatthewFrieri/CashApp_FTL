@@ -5,10 +5,10 @@ def create_connection(host_name, user_name, user_password, db_name):
     connection = None
     try:
         connection = mysql.connector.connect(
-            host=host_name,
-            user=user_name,
-            password=user_password,
-            database=db_name
+            host='127.0.0.1',
+            user='root',
+            password='MYSQL_PASSWORD',
+            database='ftl_test_db'
         )
         print("Connection to MySQL DB successful")
     except Error as e:
